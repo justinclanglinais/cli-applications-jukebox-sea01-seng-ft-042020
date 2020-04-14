@@ -26,9 +26,7 @@ def play (array)
     end
     
   end
-  if array.include?('input') == false
-      puts "Invalid input, please try again"
-    end
+  
 end
 
 def list (array)
