@@ -28,8 +28,10 @@ def help
   puts "- exit : exits this program"
 end
 
-def play 
-  
+def play (array)
+  puts "Please enter a song name or number:"
+  input = gets.strip
+  array.each_with_index so 
 end
 
 def list (array)
