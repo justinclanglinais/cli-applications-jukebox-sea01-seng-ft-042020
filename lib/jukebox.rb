@@ -32,11 +32,9 @@ def play
   
 end
 
-def list 
-  count = 0
-  songs.each do | i |
-    puts "#{count + 1}. #{i}"
-    count += 1
+def list (array)
+  array.each_with_index do | s , i |
+    puts "#{i + 1}. #{s}"
   end
 end
 
