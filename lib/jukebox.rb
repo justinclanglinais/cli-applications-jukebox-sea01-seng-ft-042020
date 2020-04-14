@@ -46,7 +46,7 @@ def run(array)
   elsif input == "play"
     play(array)
   elsif input == "list"
-    list(soarrayngs)
+    list(array)
   elsif input == "exit"
     exit_jukebox
   end
