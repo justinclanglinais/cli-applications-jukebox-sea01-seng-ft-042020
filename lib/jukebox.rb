@@ -17,7 +17,7 @@ end
 
 def play (array)
   puts "Please enter a song name or number:"
-  input = gets.strip
+  input = gets.strip.to_s
   array.each_with_index do | s , i |
     if input == s 
       puts "Playing #{s}"
