@@ -17,11 +17,11 @@ end
 
 def play (array)
   puts "Please enter a song name or number:"
-  input = gets.strip.to_s
+  input = gets.strip
   array.each_with_index do | s , i |
     if input == s 
       puts "Playing #{s}"
-    elsif input == (i + 1)
+    elsif input.to_i == (i + 1)
       puts "Playing #{s}"
     end 
     puts "Invalid input, please try again"
