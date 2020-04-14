@@ -23,9 +23,8 @@ def play (array)
       puts "Playing #{s}"
     elsif input.to_i == (i + 1)
       puts "Playing #{s}"
-    end 
+    end
   end
-  puts "Invalid input, please try again"
 end
 
 def list (array)
