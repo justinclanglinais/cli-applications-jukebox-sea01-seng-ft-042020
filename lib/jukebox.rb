@@ -24,10 +24,11 @@ def play (array)
     elsif input.to_i == (i + 1)
       puts "Playing #{s}"
     end
-    if array.include?('input') == false
+    
+  end
+  if array.include?('input') == false
       puts "Invalid input, please try again"
     end
-  end
 end
 
 def list (array)
