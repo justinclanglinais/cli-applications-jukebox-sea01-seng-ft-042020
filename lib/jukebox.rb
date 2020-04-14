@@ -31,7 +31,14 @@ end
 def play (array)
   puts "Please enter a song name or number:"
   input = gets.strip
-  array.each_with_index so 
+  array.each_with_index do | s , i |
+    if input == s 
+      puts "Playing #{s}"
+    elsif input == (i + 1)
+      puts "Playing #{array[i]"
+    end 
+    puts "Invalid input, please try again"
+  end
 end
 
 def list (array)
@@ -41,5 +48,19 @@ def list (array)
 end
 
 def exit_jukebox 
-  
+  puts "Goodbye"
 end
+
+def run
+  puts "Please enter a command:"
+  input = gets.strip
+  if input == "help"
+    help
+  elsif input == "play"
+    play(songs)
+  elsif input == "list"
+    list(songs)
+  elsif input == "exit"
+    exit_jukebox
+  end
+end 
