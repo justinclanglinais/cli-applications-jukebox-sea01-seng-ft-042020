@@ -23,7 +23,7 @@ def play (array)
     if input == s 
       puts "Playing #{s}"
     elsif input == (i + 1)
-      puts "Playing #{array[i]"
+      puts "Playing #{array[i]}"
     end 
     puts "Invalid input, please try again"
   end
